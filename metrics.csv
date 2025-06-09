@@ -1,0 +1,6 @@
+metrics,values
+accuracy_score,0.7584269662921348
+precision_score,0.6710526315789473
+recall_score,0.7391304347826086
+f1_score,0.7034482758620689
+roc_auc_score,0.7548863183087355
