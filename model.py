@@ -11,8 +11,8 @@ from sklearn.impute import SimpleImputer
 import pickle
 
 def main():
-    df = sns.load_dataset('titanic')
-    # df = pd.read_csv('./data/titanic.csv')
+    # df = sns.load_dataset('titanic')
+    df = pd.read_csv('./data/titanic.csv')
     # Первичная предобработка
     # Удалим колонку 'deck' (много пропусков) и строки, где пропущен 'embarked'
     df.drop(columns=['deck'], inplace=True)

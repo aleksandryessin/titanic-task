@@ -1,0 +1,5 @@
+[core]
+    remote = titanic
+['remote "titanic"']
+    url = s3://mlops-dvc-titanic-25-06
+    endpointurl = https://storage.yandexcloud.net
