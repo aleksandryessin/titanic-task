@@ -9,3 +9,13 @@ stages:
     metrics:
     - metrics.csv:
         cache: false
+
+plots:
+  - metrics.csv:
+      x: metrics
+      y: values
+      template: simple
+      title: "Model Metrics"
+      x_label: "Metric"
+      y_label: "Value"
+
