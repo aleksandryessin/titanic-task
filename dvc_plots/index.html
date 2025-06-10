@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>DVC Plot</title>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+    
+    <style>
+        table {
+            border-spacing: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id = "metrics_csv">
+        <script type = "text/javascript">
+            var spec = {"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"values": [{"metrics": "accuracy_score", "values": "0.7584269662921348", "rev": "workspace"}, {"metrics": "precision_score", "values": "0.6710526315789473", "rev": "workspace"}, {"metrics": "recall_score", "values": "0.7391304347826086", "rev": "workspace"}, {"metrics": "f1_score", "values": "0.7034482758620689", "rev": "workspace"}, {"metrics": "roc_auc_score", "values": "0.7548863183087355", "rev": "workspace"}]}, "title": {"text": "Model Metrics", "anchor": "middle"}, "params": [{"name": "grid", "select": "interval", "bind": "scales"}], "width": 300, "height": 300, "mark": {"type": "line", "tooltip": {"content": "data"}}, "encoding": {"x": {"field": "metrics", "type": "quantitative", "title": "Metric"}, "y": {"field": "values", "type": "quantitative", "title": "Value", "scale": {"zero": false}}, "color": {"field": "rev", "scale": {"domain": ["workspace"], "range": ["#945dd6"]}}, "strokeDash": {}, "tooltip": [{"field": "rev"}, {"field": "metrics"}, {"field": "values"}]}};
+            vegaEmbed('#metrics_csv', spec);
+        </script>
+    </div>
+    
+</body>
+</html>

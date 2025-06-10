@@ -10,8 +10,8 @@ stages:
       nfiles: 1
     - path: model.py
       hash: md5
-      md5: 4ab066a7137bff8bccc296483925c11f
-      size: 4223
+      md5: 3ff86dc7ffa5649dd1ea2e9ffe513887
+      size: 4214
     outs:
     - path: metrics.csv
       hash: md5
@@ -19,5 +19,5 @@ stages:
       size: 183
     - path: model.pkl
       hash: md5
-      md5: ab37f4d0572ec5b41597a866ae705483
-      size: 2366172
+      md5: b3d47256ac1eb9d0df105499d10ee5ce
+      size: 2333674
