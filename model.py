@@ -20,11 +20,11 @@ def main():
 
     # Целевая переменная и признаки
     y = df['survived']
-    X = df[['pclass', 'sex', 'age', 'sibsp', 'parch', 'fare', 'embarked', 'adult_male', 'alone']]
+    X = df[['pclass', 'sex', 'age', 'sibsp', 'parch', 'fare', 'embarked']] # 'adult_male', 'alone'
 
     # Определим числовые и категориальные столбцы
     numeric_features = ['age', 'sibsp', 'parch', 'fare']
-    categorical_features = ['pclass', 'sex', 'embarked', 'adult_male', 'alone']
+    categorical_features = ['pclass', 'sex', 'embarked'] # 'adult_male', 'alone'
 
     # Настраиваем трансформацию для числовых признаков
     #    - Заполним пропуски медианой (SimpleImputer)
