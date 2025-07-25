@@ -20,10 +20,10 @@ def main():
 
     # Целевая переменная и признаки
     y = df['survived']
-    X = df[['pclass', 'sex', 'age', 'sibsp', 'parch', 'fare', 'embarked']] # 'adult_male', 'alone'
+    X = df[['pclass', 'sex', 'age', 'sibsp', 'fare', 'embarked']] # 'adult_male', 'alone', 'parch'
 
     # Определим числовые и категориальные столбцы
-    numeric_features = ['age', 'sibsp', 'parch', 'fare']
+    numeric_features = ['age', 'sibsp', 'fare'] # 'parch'
     categorical_features = ['pclass', 'sex', 'embarked'] # 'adult_male', 'alone'
 
     # Настраиваем трансформацию для числовых признаков

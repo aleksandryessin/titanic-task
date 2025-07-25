@@ -1,6 +1,7 @@
 [core]
-    remote = titanic
+    remote = mlops-dvc-titanic-25-06
     autostage = true
-['remote "titanic"']
+
+[remote "mlops-dvc-titanic-25-06"]
     url = s3://mlops-dvc-titanic-25-06
     endpointurl = https://storage.yandexcloud.net
