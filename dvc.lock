@@ -5,19 +5,19 @@ stages:
     deps:
     - path: data
       hash: md5
-      md5: 24b369a08c61e49b170b8baecf8fb81f.dir
-      size: 57910
+      md5: afae6e921209b1eb8fb40853a56dd7b4.dir
+      size: 57018
       nfiles: 1
     - path: model.py
       hash: md5
-      md5: 0c1c0ece8c2bca896061c462a4781160
-      size: 4253
+      md5: ee5c31cd99f54cbfbdf82cbe150bad98
+      size: 4166
     outs:
     - path: metrics.csv
       hash: md5
-      md5: aa2b7b3385d5f65a04e74dd6dcf9441e
-      size: 183
+      md5: 7c940685d321ba2e297fb7f2f64f94bf
+      size: 177
     - path: model.pkl
       hash: md5
-      md5: bccfe0952c74377d3fc68cd77231d0d9
-      size: 2333627
+      md5: c8070d3bfb30d9bc2c05894667ba6cc5
+      size: 2260399
